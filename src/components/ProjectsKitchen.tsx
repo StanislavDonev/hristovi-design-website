@@ -96,7 +96,7 @@ const ProjectsKitchen: React.FC = () => {
                   <h3 className="project-title">{project.title}</h3>
                   <p className="project-location">📍 {project.location}</p>
                   <p className="project-description">{project.description}</p>
-                  <Link to={`/projects/kitchens/${project.id}`} className="project-details-btn">Виж детайли</Link>
+                  <Link to={`/projects/kitchens/kitchen-${project.id}`} className="project-details-btn">Виж детайли</Link>
                 </div>
               </div>
             ))}

@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import './VideoHero.css'
+import heroVideo from '../assets/14.0-30.0.mp4'
 
 const VideoHero: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -26,7 +27,7 @@ const VideoHero: React.FC = () => {
         >
           {/* Sample furniture video - using a placeholder */}
           <source
-            src="https://assets.mixkit.co/videos/preview/mixkit-modern-living-room-interior-49635-large.mp4"
+            src={heroVideo}
             type="video/mp4"
           />
           Your browser does not support the video tag.

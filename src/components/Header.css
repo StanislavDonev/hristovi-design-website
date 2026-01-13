@@ -18,6 +18,7 @@
 
 .header-main {
   padding: 2px 0;
+  position: relative; /* Anchor mobile dropdown nav below header */
 }
 
 .container {
@@ -31,6 +32,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  position: static; /* Let mobile nav anchor to header-main instead */
 }
 
 .logo {
@@ -92,7 +94,7 @@
   visibility: hidden;
   transform: translateY(-10px);
   transition: all 0.3s ease;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .dropdown-menu.show {
@@ -130,7 +132,7 @@
 }
 
 .nav-link.highlight {
-  color: #FFD700;
+  /* color: #FFD700; --- IGNORE --- */
 }
 
 .header-actions {
@@ -147,18 +149,18 @@
 .social-link {
   display: flex;
   align-items: center;
-  transition: all 0.3s;
-  color: #333;
+  transition: transform 0.3s;
 }
 
 .social-link:hover {
   transform: scale(1.1);
-  color: #FFD700;
+  background: transparent;
 }
 
 .social-link .social-icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
 }
 
 .icon-button {
@@ -193,7 +195,7 @@
 @media (max-width: 768px) {
   .nav {
     position: absolute;
-    top: 100%;
+    top: 100%; /* Sit directly below header-main */
     left: 0;
     right: 0;
     background: #fff;
@@ -201,6 +203,8 @@
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: none;
+    z-index: 2000; /* Above header items and content */
+    border-top: 1px solid #eee;
   }
 
   .nav.open {

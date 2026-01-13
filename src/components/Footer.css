@@ -63,12 +63,11 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s;
-  color: #FFD700;
 }
 
 .social-icon:hover {
-  transform: scale(1.15);
-  color: #FFC700;
+  transform: scale(1.25);
+  background: transparent;
 }
 
 .social-icon svg {
