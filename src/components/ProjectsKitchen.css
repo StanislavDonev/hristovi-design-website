@@ -1,31 +1,32 @@
 .projects-page {
   min-height: 100vh;
-  background: #0a0a0a;
+  background: #4f4249;
 }
 
 .projects-hero {
-  background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #4f4249 0%, #1a1a1a 100%);
   padding: 120px 0 80px;
   text-align: center;
-  border-bottom: 3px solid #FFD700;
+  border-bottom: 3px solid #e9dabd;
 }
 
 .projects-hero-title {
   font-size: 48px;
   font-weight: 700;
-  color: #FFD700;
+  color: #e9dabd;
   margin-bottom: 20px;
   letter-spacing: 3px;
 }
 
 .projects-hero-subtitle {
   font-size: 20px;
-  color: #ccc;
+  color: #e9dabd;
   font-weight: 300;
 }
 
 .projects-content {
   padding: 80px 0;
+  background-color: #4f4249;
 }
 
 .projects-intro {
@@ -36,14 +37,14 @@
 
 .projects-intro h2 {
   font-size: 36px;
-  color: #FFD700;
+  color: #e9dabd;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
 .projects-intro p {
   font-size: 18px;
-  color: #ccc;
+  color: #e9dabd;
   line-height: 1.8;
 }
 
@@ -55,16 +56,16 @@
 }
 
 .project-card {
-  background: #000;
+  background: #4f4249;
   border-radius: 10px;
   overflow: hidden;
-  border: 2px solid #FFD700;
+  border: 2px solid #e9dabd;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4);
+  box-shadow: 0 15px 40px rgba(79, 66, 73, 0.4);
 }
 
 .project-image {
@@ -90,14 +91,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to bottom, transparent 50%, rgba(79, 66, 73, 0.8) 100%);
   display: flex;
   align-items: flex-end;
   padding: 20px;
 }
 
 .project-year {
-  background: #FFD700;
+  background: #e9dabd;
   color: #000;
   padding: 8px 20px;
   font-weight: 700;
@@ -112,7 +113,7 @@
 .project-title {
   font-size: 22px;
   font-weight: 700;
-  color: #FFD700;
+  color: #e9dabd;
   margin-bottom: 10px;
 }
 
@@ -131,8 +132,8 @@
 
 .project-details-btn {
   background: transparent;
-  color: #FFD700;
-  border: 2px solid #FFD700;
+  color: #e9dabd;
+  border: 2px solid #e9dabd;
   padding: 12px 30px;
   font-size: 14px;
   font-weight: 600;
@@ -147,7 +148,7 @@
 }
 
 .project-details-btn:hover {
-  background: #FFD700;
+  background: #e9dabd;
   color: #000;
 }
 
@@ -156,12 +157,12 @@
   background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
   padding: 60px 40px;
   border-radius: 15px;
-  border: 2px solid #FFD700;
+  border: 2px solid #e9dabd;
 }
 
 .projects-cta h2 {
   font-size: 36px;
-  color: #FFD700;
+  color: #e9dabd;
   margin-bottom: 15px;
   font-weight: 700;
 }
@@ -173,7 +174,7 @@
 }
 
 .contact-btn {
-  background: #FFD700;
+  background: #e9dabd;
   color: #000;
   padding: 18px 50px;
   font-size: 16px;
@@ -185,9 +186,9 @@
 }
 
 .contact-btn:hover {
-  background: #FFC700;
+  background: #e9dabd;
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(245, 230, 10, 0.3);
 }
 
 @media (max-width: 768px) {

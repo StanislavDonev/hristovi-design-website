@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import './ProjectDetail.css'
 import scandinavianKitchen from '../assets/images/scandinavian-kitchen-ideas-article.jpg'
+//import SlideshowGallery from './SlideshowGallery'
 
 interface ProjectDetailData {
   id: number
@@ -250,6 +251,11 @@ const ProjectDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>()
   const project = id ? projectsData[id] : null
 
+  // Scroll to top when component mounts or id changes
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }, [id])
+
   // Determine the back link based on project category
   const getBackLink = () => {
     if (!project) return '/projects/kitchens'
@@ -302,7 +308,7 @@ const ProjectDetail: React.FC = () => {
               </div>
 
               <div className="sidebar-section">
-                <h6 className="sidebar-label">CATEGORY</h6>
+                <h6 className="sidebar-label">КАТЕГОРИЯ:</h6>
                 <p className="sidebar-text">{project.category}</p>
               </div>
 
@@ -320,7 +326,6 @@ const ProjectDetail: React.FC = () => {
             {/* Main Content Area */}
             <main className="project-detail-main">
               <section className="content-section">
-                <h6 className="section-label">ABOUT THIS PROJECT</h6>
                 <h2 className="section-title">ЗА ПРОЕКТА</h2>
                 <p className="section-text">{project.aboutProject}</p>
               </section>

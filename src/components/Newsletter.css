@@ -1,7 +1,7 @@
 .newsletter {
   padding: 60px 0;
   background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
-  color: #FFD700;
+  color: #e9dabd;
 }
 
 .newsletter-content {
@@ -46,7 +46,7 @@
 }
 
 .newsletter-button {
-  background: #FFD700;
+  background: #e9dabd;
   color: #000;
   padding: 15px 30px;
   font-size: 16px;
@@ -58,7 +58,7 @@
 }
 
 .newsletter-button:hover {
-  background: #FFC700;
+  background: #e9dabd;
 }
 
 .checkbox-label {
@@ -75,7 +75,7 @@
 }
 
 .checkbox-label a {
-  color: #FFD700;
+  color: #e9dabd;
   text-decoration: underline;
 }
 

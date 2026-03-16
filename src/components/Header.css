@@ -6,8 +6,8 @@
 }
 
 .header-top {
-  background: #000;
-  color: #FFD700;
+  background: #4f4249;
+  color: #e9dabd;
   padding: 8px 0;
   font-size: 14px;
 }
@@ -114,8 +114,8 @@
 }
 
 .dropdown-item:hover {
-  background: #000;
-  color: #FFD700;
+  background: #4f4249;
+  color: #e9dabd;
   padding-left: 25px;
 }
 
@@ -128,11 +128,11 @@
 }
 
 .nav-link:hover {
-  color: #FFD700;
+  color: #e9dabd;
 }
 
 .nav-link.highlight {
-  /* color: #FFD700; --- IGNORE --- */
+  /* color: #e9dabd; --- IGNORE --- */
 }
 
 .header-actions {
@@ -178,7 +178,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: #FFD700;
+  background: #e9dabd;
   color: #000;
   font-size: 11px;
   padding: 2px 6px;

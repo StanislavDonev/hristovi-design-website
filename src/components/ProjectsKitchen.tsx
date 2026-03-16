@@ -64,6 +64,10 @@ const projects: Project[] = [
 ]
 
 const ProjectsKitchen: React.FC = () => {
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [])
+
   return (
     <div className="projects-page">
       <div className="projects-hero">

@@ -46,7 +46,7 @@
   transform: translateY(-50%);
   z-index: 3;
   text-align: center;
-  color: #FFD700;
+  color: #e9dabd;
 }
 
 .video-title {
@@ -68,7 +68,7 @@
 }
 
 .video-cta {
-  background: #FFD700;
+  background: #e9dabd;
   color: #000;
   padding: 18px 50px;
   font-size: 16px;
@@ -78,14 +78,14 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   animation: fadeInUp 1s ease-out 0.4s both;
-  border: 2px solid #FFD700;
+  border: 2px solid #e9dabd;
 }
 
 .video-cta:hover {
   background: transparent;
-  color: #FFD700;
+  color: #e9dabd;
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(245, 230, 10, 0.3);
 }
 
 .scroll-indicator {
@@ -106,13 +106,13 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
-  color: #FFD700;
+  color: #e9dabd;
   text-transform: uppercase;
 }
 
 .scroll-arrow {
   font-size: 24px;
-  color: #FFD700;
+  color: #e9dabd;
 }
 
 @keyframes fadeInUp {

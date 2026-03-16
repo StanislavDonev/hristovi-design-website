@@ -10,19 +10,19 @@
 }
 
 .category-card {
-  background: #000;
+  background: #4f4249;
   padding: 40px 20px;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(245, 230, 10, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
-  border: 2px solid #FFD700;
+  border: 2px solid #e9dabd;
 }
 
 .category-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+  box-shadow: 0 8px 25px rgba(245, 230, 10, 0.5);
 }
 
 .category-icon {
@@ -34,23 +34,23 @@
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #FFD700;
+  color: #e9dabd;
 }
 
 .category-button {
   background: transparent;
-  color: #FFD700;
+  color: #e9dabd;
   padding: 10px 25px;
   font-size: 14px;
   font-weight: 600;
-  border: 2px solid #FFD700;
+  border: 2px solid #e9dabd;
   border-radius: 5px;
   transition: all 0.3s;
   text-transform: uppercase;
 }
 
 .category-button:hover {
-  background: #FFD700;
+  background: #e9dabd;
   color: #000;
 }
 
