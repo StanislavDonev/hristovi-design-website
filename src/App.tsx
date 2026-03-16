@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Home from './components/Home'
+import About from './components/About'
 import Projects from './components/Projects'
 import ProjectsKitchen from './components/ProjectsKitchen'
 import ProjectsBedroom from './components/ProjectsBedroom'
@@ -16,6 +17,7 @@ const App: React.FC = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/kitchens" element={<ProjectsKitchen />} />
           <Route path="/projects/kitchens/:id" element={<ProjectDetail />} />
