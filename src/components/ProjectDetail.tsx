@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import './ProjectDetail.css'
 import scandinavianKitchen from '../assets/images/scandinavian-kitchen-ideas-article.jpg'
-//import SlideshowGallery from './SlideshowGallery'
+import SlideshowGallery from './SlideshowGallery'
 
 interface ProjectDetailData {
   id: number
@@ -331,13 +331,10 @@ const ProjectDetail: React.FC = () => {
               </section>
 
               {/* Image Gallery */}
-              <div className="project-gallery">
-                {project.additionalImages.map((image, index) => (
-                  <div key={index} className="gallery-item">
-                    <img src={image} alt={`${project.title} - ${index + 1}`} />
-                  </div>
-                ))}
-              </div>
+              <SlideshowGallery
+                images={[project.mainImage, ...project.additionalImages]}
+                title={project.title}
+              />
 
               <section className="content-section">
                 <h2 className="section-title">КАК ПОСТИГНАХМЕ КРАЙНИЯ РЕЗУЛТАТ?</h2>
