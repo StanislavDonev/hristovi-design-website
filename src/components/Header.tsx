@@ -37,10 +37,12 @@ const Header: React.FC = () => {
                 onMouseEnter={() => setProjectsOpen(true)}
                 onMouseLeave={() => setProjectsOpen(false)}
               >
-                <a href="#" className="nav-link">ПРОЕКТИ <span className="dropdown-arrow">▼</span></a>
+                <Link to="/projects" className="nav-link" onClick={() => setMenuOpen(false)}>
+                  ПРОЕКТИ <span className="dropdown-arrow">▼</span>
+                </Link>
                 <div className={`dropdown-menu ${projectsOpen ? 'show' : ''}`}>
-                  <Link to="/projects/kitchens" className="dropdown-item">Кухни</Link>
-                  <Link to="/projects/bedrooms" className="dropdown-item">Спални</Link>
+                  <Link to="/projects/kitchens" className="dropdown-item" onClick={() => setMenuOpen(false)}>Кухни</Link>
+                  <Link to="/projects/bedrooms" className="dropdown-item" onClick={() => setMenuOpen(false)}>Спални</Link>
                   <a href="#" className="dropdown-item">Детски</a>
                   <a href="#" className="dropdown-item">Офиси</a>
                   <a href="#" className="dropdown-item">Луксозни проекти</a>

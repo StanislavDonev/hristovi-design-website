@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const Footer: React.FC = () => {
@@ -23,7 +24,7 @@ const Footer: React.FC = () => {
             <ul className="footer-links">
               <li><a href="#">За нас</a></li>
               <li><a href="#">Контакти</a></li>
-              <li><a href="#">Проекти</a></li>
+              <li><Link to="/projects">Проекти</Link></li>
               <li><a href="#">Промоции</a></li>
             </ul>
           </div>
