@@ -33,8 +33,8 @@ const Footer: React.FC = () => {
             <h3 className="footer-heading">ПОЛЕЗНИ ВРЪЗКИ</h3>
             <ul className="footer-links">
               <li><a href="#">Доставка и монтаж</a></li>
-              <li><a href="#">Общи условия</a></li>
-              <li><a href="#">Защита на лични данни</a></li>
+              <li><Link to="/terms">Общи условия</Link></li>
+              <li><Link to="/privacy-policy">Защита на лични данни</Link></li>
               <li><a href="#">Карта на сайта</a></li>
             </ul>
           </div>

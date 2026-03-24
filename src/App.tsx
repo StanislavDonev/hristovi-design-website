@@ -7,6 +7,8 @@ import Projects from './components/Projects'
 import ProjectsKitchen from './components/ProjectsKitchen'
 import ProjectsBedroom from './components/ProjectsBedroom'
 import ProjectDetail from './components/ProjectDetail'
+import Terms from './components/Terms'
+import PrivacyPolicy from './components/PrivacyPolicy'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -23,6 +25,8 @@ const App: React.FC = () => {
           <Route path="/projects/kitchens/:id" element={<ProjectDetail />} />
           <Route path="/projects/bedrooms" element={<ProjectsBedroom />} />
           <Route path="/projects/bedrooms/:id" element={<ProjectDetail />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
         <Footer />
       </div>
