@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
             <h3 className="footer-heading">ИНФОРМАЦИЯ</h3>
             <ul className="footer-links">
               <li><Link to="/about">За нас</Link></li>
-              <li><a href="#">Контакти</a></li>
+              <li><Link to="/contacts">Контакти</Link></li>
               <li><Link to="/projects">Проекти</Link></li>
               <li><a href="#">Промоции</a></li>
             </ul>

@@ -48,6 +48,7 @@ const Header: React.FC = () => {
                   <a href="#" className="dropdown-item">Луксозни проекти</a>
                 </div>
               </div>
+              <Link to="/contacts" className="nav-link" onClick={() => setMenuOpen(false)}>КОНТАКТИ</Link>
             </nav>
             
             <div className="header-actions">
