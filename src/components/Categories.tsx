@@ -18,7 +18,7 @@ const categories: Category[] = [
 
 const Categories: React.FC = () => {
   return (
-    <section className="categories">
+    <section id="services" className="categories">
       <div className="container">
         <div className="categories-grid">
           {categories.map((category) => (
