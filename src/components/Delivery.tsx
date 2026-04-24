@@ -13,7 +13,7 @@ const steps = [
     number: '02',
     title: 'Замерване и проектиране',
     description:
-      'Нашите специалисти извършват прецизно замерване на обекта. Изготвяме индивидуален проект с чертежи и 3D визуализации, съобразен с вашите изисквания и архитектурата на помещението.',
+      'Нашите специалисти извършват прецизно замерване на обекта. Изготвяме индивидуален проект с 3D визуализации, съобразен с вашите изисквания и архитектурата на помещението.',
   },
   {
     number: '03',
@@ -160,19 +160,20 @@ const Delivery: React.FC = () => {
             <div className="delivery-timeline-aside">
               <div className="delivery-info-card">
                 <h3>Работно време</h3>
-                <p>Пон – Пет: 09:00 – 18:00</p>
-                <p>Събота: 10:00 – 14:00</p>
+                <p>Пон – Пет: 08:00 – 17:00</p>
+                <p>Събота: 08:00 – 15:00</p>
                 <p>Неделя: почивен ден</p>
               </div>
               <div className="delivery-info-card">
-                <h3>Контакти за доставки</h3>
-                <p>📞 +359 888 123 456</p>
+                <h3>Контакти за поръчки</h3>
+                <p>📞 +359 897 495 025</p>
+                <p>📞 +359 895 436 948</p>
                 <p>✉️ office@hristovidesign.bg</p>
               </div>
               <div className="delivery-info-card delivery-info-card--accent">
                 <h3>Безплатен оглед</h3>
                 <p>
-                  Предлагаме безплатен оглед на обекта и консултация за всички проекти в Варна и областта.
+                  Предлагаме безплатен оглед на обекта и консултация за всички проекти във Варна и областта.
                 </p>
               </div>
             </div>
@@ -202,14 +203,14 @@ const Delivery: React.FC = () => {
       <section className="delivery-cta">
         <div className="container">
           <div className="delivery-cta-panel">
-            <h2>Готови да започнем?</h2>
+            <h2>Готови ли сте да започнем?</h2>
             <p>
               Свържете се с нас и нашият екип ще организира безплатна консултация,
               замерване и подготовка на индивидуална оферта.
             </p>
             <div className="delivery-cta-actions">
               <Link to="/contacts" className="delivery-btn delivery-btn-primary">Свържете се с нас</Link>
-              <a href="tel:+359888123456" className="delivery-btn delivery-btn-secondary">+359 888 123 456</a>
+              <a href="tel:+359897495025" className="delivery-btn delivery-btn-secondary">+359 897 495 025</a>
             </div>
           </div>
         </div>

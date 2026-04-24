@@ -52,6 +52,17 @@
   margin-bottom: 8px;
 }
 
+.footer-contact-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-contact-link:hover {
+  color: #e9dabd;
+  text-decoration: underline;
+}
+
 .social-links {
   display: flex;
   gap: 15px;

@@ -19,6 +19,12 @@ const categories: Category[] = [
     available: true,
   },
   {
+    title: 'Дневни',
+    description: 'Модерни и уютни дневни пространства с елегантен дизайн и функционално разпределение.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&h=800&fit=crop',
+    available: false,
+  },
+  {
     title: 'Спални',
     description: 'Вижте проекти за уютни и елегантни спални, съобразени с вашия стил.',
     image: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1200&h=800&fit=crop',
@@ -38,9 +44,21 @@ const categories: Category[] = [
     available: false,
   },
   {
+    title: 'Влагоустойчиви мебели',
+    description: 'Специализирани решения за влажни среди с материали устойчиви на влага и корозия.',
+    image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=800&fit=crop',
+    available: false,
+  },
+  {
     title: 'Луксозни проекти',
     description: 'Премиум проекти с висок клас материали, авторски детайли и изискано изпълнение.',
     image: 'https://images.unsplash.com/photo-1617104551722-3b2d51366400?w=1200&h=800&fit=crop',
+    available: false,
+  },
+  {
+    title: 'Цялостни интериорни решение',
+    description: 'Комплексни интериорни проекти, включващи всички аспекти на дизайна и функционалността.',
+    image: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=1200&h=800&fit=crop',
     available: false,
   },
 ]

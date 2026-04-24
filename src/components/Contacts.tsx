@@ -4,8 +4,8 @@ import './Contacts.css'
 const contactCards = [
   {
     title: 'Телефони',
-    lines: ['+359 888 123 456', '+359 888 654 321'],
-    cta: 'tel:+359888123456',
+    lines: ['+359 897 495 025', '+359 895 436 948'],
+    cta: 'tel:+359897495025',
     ctaLabel: 'Обади се',
   },
   {
@@ -16,15 +16,15 @@ const contactCards = [
   },
   {
     title: 'Адрес',
-    lines: ['бул. Цариградско шосе 115Г', 'София, България'],
-    cta: 'https://maps.google.com/?q=Ring+Tower+Sofia',
+    lines: ['Островна промишленна зона Аспарухово, РОДОПА', 'Варна, 9003, България'],
+    cta: 'https://www.google.com/maps?q=5VWV%2B649',
     ctaLabel: 'Отвори карта',
   },
 ]
 
 const workingHours = [
-  { day: 'Понеделник - Петък', hours: '09:00 - 19:00' },
-  { day: 'Събота', hours: '10:00 - 15:00' },
+  { day: 'Понеделник - Петък', hours: '08:00 - 17:00' },
+  { day: 'Събота', hours: '08:00 - 15:00' },
   { day: 'Неделя', hours: 'Почивен ден' },
 ]
 
@@ -50,7 +50,7 @@ const Contacts: React.FC = () => {
           <article className="contacts-intro-card">
             <h2>Нека Обсъдим Вашия Проект</h2>
             <p>
-              Работим с клиенти в София и цялата страна по проекти за кухни, спални, дневни,
+              Работим с клиенти във Варна, София, Бургас и цялата страна по проекти за кухни, спални, дневни,
               офиси и цялостни интериори. Можете да се свържете с нас по телефон, имейл или
               чрез формата по-долу.
             </p>
@@ -107,6 +107,10 @@ const Contacts: React.FC = () => {
                 <input type="text" name="name" placeholder="Вашето име" required />
               </label>
               <label>
+                Населено място
+                <input type="text" name="city" placeholder="Населено място" required />
+              </label>
+              <label>
                 Телефон
                 <input type="tel" name="phone" placeholder="+359..." required />
               </label>
@@ -139,7 +143,7 @@ const Contacts: React.FC = () => {
             <div className="contacts-map-wrap">
               <iframe
                 title="Hristovi Design Location"
-                src="https://www.google.com/maps?q=Ring+Tower+Sofia&output=embed"
+                src="https://www.google.com/maps?q=5VWV%2B649+Varna&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen

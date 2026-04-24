@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './VideoHero.css'
 import heroVideo from '../assets/14.0-30.0.mp4'
 
@@ -39,7 +40,7 @@ const VideoHero: React.FC = () => {
           <div className="container">
             <h1 className="video-title">HRISTOVI DESIGN</h1>
             <p className="video-subtitle">Мебели, които създават история</p>
-            <button className="video-cta">ОТКРИЙ КОЛЕКЦИЯТА</button>
+            <Link to="/projects" className="video-cta">ОТКРИЙ КОЛЕКЦИЯТА</Link>
           </div>
         </div>
         

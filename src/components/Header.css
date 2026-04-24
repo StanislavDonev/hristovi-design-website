@@ -192,6 +192,22 @@
   padding: 5px;
 }
 
+.header-contact-link {
+  color: #e9dabd;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.header-contact-link:hover {
+  color: #f5e6d2;
+  text-decoration: underline;
+}
+
+.contact-separator {
+  margin: 0 4px;
+  color: #e9dabd;
+}
+
 @media (max-width: 768px) {
   .nav {
     position: absolute;
