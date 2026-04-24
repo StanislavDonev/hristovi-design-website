@@ -2,8 +2,7 @@ import React from 'react'
 import VideoHero from './VideoHero'
 import ScrollingProjects from './ScrollingProjects'
 import Hero from './Hero'
-import Categories from './Categories'
-import Newsletter from './Newsletter'
+import HomeProjects from './HomeProjects'
 
 const Home: React.FC = () => {
   return (
@@ -11,8 +10,7 @@ const Home: React.FC = () => {
       <VideoHero />
       <ScrollingProjects />
       <Hero />
-      <Categories />
-      <Newsletter />
+      <HomeProjects />
     </>
   )
 }
