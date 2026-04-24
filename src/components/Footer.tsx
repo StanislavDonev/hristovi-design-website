@@ -11,11 +11,13 @@ const Footer: React.FC = () => {
             <h3 className="footer-heading">КАТЕГОРИИ</h3>
             <ul className="footer-links">
               <li><Link to="/projects/kitchens">Кухни</Link></li>
+              <li><Link to="/projects/living">Дневни</Link></li>
               <li><Link to="/projects/bedrooms">Спални</Link></li>
-              <li><a href="#">Детски</a></li>
-              <li><Link to="/projects">Офиси</Link></li>
-              <li><Link to="/projects">Луксозни проекти</Link></li>
-              <li><a href="#">Аксесоари</a></li>
+              <li><Link to="/projects/kids">Детски</Link></li>
+              <li><Link to="/projects/office">Офиси</Link></li>
+              <li><Link to="/projects/moisture">Влагоустойчиви мебели</Link></li>
+              <li><Link to="/projects/luxury">Луксозни проекти</Link></li>
+              <li><Link to="/projects/interior">Цялостни интериорни решение</Link></li>
             </ul>
           </div>
           
@@ -25,7 +27,6 @@ const Footer: React.FC = () => {
               <li><Link to="/about">За нас</Link></li>
               <li><Link to="/contacts">Контакти</Link></li>
               <li><Link to="/projects">Проекти</Link></li>
-              <li><a href="#">Промоции</a></li>
             </ul>
           </div>
           

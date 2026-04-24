@@ -34,7 +34,7 @@ const Header: React.FC = () => {
             <nav className={`nav ${menuOpen ? 'open' : ''}`}>
               <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>НАЧАЛО</Link>
               <Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>ЗА НАС</Link>
-              <a href="/#services" className="nav-link" onClick={() => setMenuOpen(false)}>УСЛУГИ</a>
+              <Link to="/services" className="nav-link" onClick={() => setMenuOpen(false)}>УСЛУГИ</Link>
               <div 
                 className="nav-dropdown"
                 onMouseEnter={() => setProjectsOpen(true)}
@@ -45,13 +45,13 @@ const Header: React.FC = () => {
                 </Link>
                 <div className={`dropdown-menu ${projectsOpen ? 'show' : ''}`}>
                   <Link to="/projects/kitchens" className="dropdown-item" onClick={() => setMenuOpen(false)}>Кухни</Link>
-                  <a href="#" className="dropdown-item">Дневни</a>
+                  <Link to="/projects/living" className="dropdown-item" onClick={() => setMenuOpen(false)}>Дневни</Link>
                   <Link to="/projects/bedrooms" className="dropdown-item" onClick={() => setMenuOpen(false)}>Спални</Link>
-                  <a href="#" className="dropdown-item">Детски</a>
-                  <a href="#" className="dropdown-item">Офиси</a>
-                  <a href="#" className="dropdown-item">Влагоустойчиви мебели</a>
-                  <a href="#" className="dropdown-item">Луксозни проекти</a>
-                  <a href="#" className="dropdown-item">Цялостни интериорни решение</a>
+                  <Link to="/projects/kids" className="dropdown-item" onClick={() => setMenuOpen(false)}>Детски</Link>
+                  <Link to="/projects/office" className="dropdown-item" onClick={() => setMenuOpen(false)}>Офиси</Link>
+                  <Link to="/projects/moisture" className="dropdown-item" onClick={() => setMenuOpen(false)}>Влагоустойчиви мебели</Link>
+                  <Link to="/projects/luxury" className="dropdown-item" onClick={() => setMenuOpen(false)}>Луксозни проекти</Link>
+                  <Link to="/projects/interior" className="dropdown-item" onClick={() => setMenuOpen(false)}>Цялостни интериорни решение</Link>
                 </div>
               </div>
               <Link to="/contacts" className="nav-link" onClick={() => setMenuOpen(false)}>КОНТАКТИ</Link>

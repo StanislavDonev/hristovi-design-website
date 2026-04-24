@@ -22,7 +22,8 @@ const categories: Category[] = [
     title: 'Дневни',
     description: 'Модерни и уютни дневни пространства с елегантен дизайн и функционално разпределение.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&h=800&fit=crop',
-    available: false,
+    route: '/projects/living',
+    available: true,
   },
   {
     title: 'Спални',
@@ -34,32 +35,37 @@ const categories: Category[] = [
   {
     title: 'Детски',
     description: 'Креативни интериорни решения за детски стаи с фокус върху удобство и безопасност.',
-    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&h=800&fit=crop',
-    available: false,
+    image: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=1200&h=800&fit=crop',
+    route: '/projects/kids',
+    available: true,
   },
   {
     title: 'Офиси',
     description: 'Ергономични и модерни офис пространства, създадени за продуктивна работа.',
     image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200&h=800&fit=crop',
-    available: false,
+    route: '/projects/office',
+    available: true,
   },
   {
     title: 'Влагоустойчиви мебели',
     description: 'Специализирани решения за влажни среди с материали устойчиви на влага и корозия.',
     image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=800&fit=crop',
-    available: false,
+    route: '/projects/moisture',
+    available: true,
   },
   {
     title: 'Луксозни проекти',
     description: 'Премиум проекти с висок клас материали, авторски детайли и изискано изпълнение.',
     image: 'https://images.unsplash.com/photo-1617104551722-3b2d51366400?w=1200&h=800&fit=crop',
-    available: false,
+    route: '/projects/luxury',
+    available: true,
   },
   {
     title: 'Цялостни интериорни решение',
     description: 'Комплексни интериорни проекти, включващи всички аспекти на дизайна и функционалността.',
     image: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=1200&h=800&fit=crop',
-    available: false,
+    route: '/projects/interior',
+    available: true,
   },
 ]
 
