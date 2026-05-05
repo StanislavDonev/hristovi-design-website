@@ -5,12 +5,24 @@ import './HomeProjects.css'
 type ProjectCategory =
   | 'ВСИЧКИ'
   | 'КУХНИ'
+  | 'ДНЕВНИ'
   | 'СПАЛНИ'
+  | 'ДЕТСКИ'
+  | 'ОФИСИ'
+  | 'ВЛАГОУСТОЙЧИВИ МЕБЕЛИ'
+  | 'ЛУКСОЗНИ ПРОЕКТИ'
+  | 'ЦЯЛОСТНИ ИНТЕРИОРИ'
 
 const TABS: ProjectCategory[] = [
   'ВСИЧКИ',
   'КУХНИ',
+  'ДНЕВНИ',
   'СПАЛНИ',
+  'ДЕТСКИ',
+  'ОФИСИ',
+  'ВЛАГОУСТОЙЧИВИ МЕБЕЛИ',
+  'ЛУКСОЗНИ ПРОЕКТИ',
+  'ЦЯЛОСТНИ ИНТЕРИОРИ',
 ]
 
 interface Project {
@@ -45,24 +57,24 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: 'СЕМЕЙНА КУХНЯ',
-    category: 'КУХНИ',
-    image: 'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=600&fit=crop',
-    route: '/projects/kitchens/kitchen-4',
+    title: 'МИНИМАЛИСТИЧНА ДНЕВНА',
+    category: 'ДНЕВНИ',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
+    route: '/projects/living/living-1',
   },
   {
     id: 5,
-    title: 'ИНДУСТРИАЛНА КУХНЯ',
-    category: 'КУХНИ',
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop',
-    route: '/projects/kitchens/kitchen-5',
+    title: 'КЛАСИЧЕСКА ДНЕВНА',
+    category: 'ДНЕВНИ',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=600&fit=crop',
+    route: '/projects/living/living-2',
   },
   {
     id: 6,
-    title: 'СКАНДИНАВСКА КУХНЯ',
-    category: 'КУХНИ',
-    image: 'https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=800&h=600&fit=crop',
-    route: '/projects/kitchens/kitchen-6',
+    title: 'ИНДУСТРИАЛНА ДНЕВНА',
+    category: 'ДНЕВНИ',
+    image: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&h=600&fit=crop',
+    route: '/projects/living/living-3',
   },
   {
     id: 7,
@@ -87,24 +99,108 @@ const projects: Project[] = [
   },
   {
     id: 10,
-    title: 'СЕМЕЙНА СПАЛНЯ',
-    category: 'СПАЛНИ',
-    image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&h=600&fit=crop',
-    route: '/projects/bedrooms/bedroom-4',
+    title: 'ДЕТСКА СТАЯ ЗА МОМЧЕ',
+    category: 'ДЕТСКИ',
+    image: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&h=600&fit=crop',
+    route: '/projects/kids/kids-1',
   },
   {
     id: 11,
-    title: 'ИНДУСТРИАЛНА СПАЛНЯ',
-    category: 'СПАЛНИ',
-    image: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&h=600&fit=crop',
-    route: '/projects/bedrooms/bedroom-5',
+    title: 'ДЕТСКА СТАЯ ЗА МОМИЧЕ',
+    category: 'ДЕТСКИ',
+    image: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&h=600&fit=crop',
+    route: '/projects/kids/kids-2',
   },
   {
     id: 12,
-    title: 'СКАНДИНАВСКА СПАЛНЯ',
-    category: 'СПАЛНИ',
-    image: 'https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=800&h=600&fit=crop',
-    route: '/projects/bedrooms/bedroom-6',
+    title: 'БЕБЕШКА СТАЯ',
+    category: 'ДЕТСКИ',
+    image: 'https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=800&h=600&fit=crop',
+    route: '/projects/kids/kids-3',
+  },
+  {
+    id: 13,
+    title: 'МОДЕРЕН ОФИС',
+    category: 'ОФИСИ',
+    image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&h=600&fit=crop',
+    route: '/projects/office/office-1',
+  },
+  {
+    id: 14,
+    title: 'ДОМАШЕН ОФИС',
+    category: 'ОФИСИ',
+    image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop',
+    route: '/projects/office/office-2',
+  },
+  {
+    id: 15,
+    title: 'ДИРЕКТОРСКИ КАБИНЕТ',
+    category: 'ОФИСИ',
+    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=600&fit=crop',
+    route: '/projects/office/office-3',
+  },
+  {
+    id: 16,
+    title: 'БАНЯ СПА ИЗЖИВЯВАНЕ',
+    category: 'ВЛАГОУСТОЙЧИВИ МЕБЕЛИ',
+    image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&h=600&fit=crop',
+    route: '/projects/moisture/moisture-1',
+  },
+  {
+    id: 17,
+    title: 'ПЕРАЛНО ПОМЕЩЕНИЕ',
+    category: 'ВЛАГОУСТОЙЧИВИ МЕБЕЛИ',
+    image: 'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&h=600&fit=crop',
+    route: '/projects/moisture/moisture-2',
+  },
+  {
+    id: 18,
+    title: 'ПЛАЖНА ВИЛА',
+    category: 'ВЛАГОУСТОЙЧИВИ МЕБЕЛИ',
+    image: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800&h=600&fit=crop',
+    route: '/projects/moisture/moisture-3',
+  },
+  {
+    id: 19,
+    title: 'ПЕНТХАУС ОЛИМП',
+    category: 'ЛУКСОЗНИ ПРОЕКТИ',
+    image: 'https://images.unsplash.com/photo-1617104551722-3b2d51366400?w=800&h=600&fit=crop',
+    route: '/projects/luxury/luxury-1',
+  },
+  {
+    id: 20,
+    title: 'ВИЛА РЕЗИДЕНЦИЯ',
+    category: 'ЛУКСОЗНИ ПРОЕКТИ',
+    image: 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=800&h=600&fit=crop',
+    route: '/projects/luxury/luxury-2',
+  },
+  {
+    id: 21,
+    title: 'ЛУКСОЗНА КУХНЯ ГУРМЕ',
+    category: 'ЛУКСОЗНИ ПРОЕКТИ',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop',
+    route: '/projects/luxury/luxury-3',
+  },
+  {
+    id: 22,
+    title: 'АПАРТАМЕНТ ХАРМОНИЯ',
+    category: 'ЦЯЛОСТНИ ИНТЕРИОРИ',
+    image: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&h=600&fit=crop',
+    route: '/projects/interior/interior-1',
+  },
+  {
+    id: 23,
+    title: 'ВИЛА ПРИРОДА',
+    category: 'ЦЯЛОСТНИ ИНТЕРИОРИ',
+    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&h=600&fit=crop',
+    route: '/projects/interior/interior-2',
+  },
+  {
+    id: 24,
+    title: 'ОФИС ПРОЕКТ ЦЕНТРАЛА',
+    category: 'ЦЯЛОСТНИ ИНТЕРИОРИ',
+    image: 'https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?w=800&h=600&fit=crop',
+    route: '/projects/interior/interior-3',
   },
 ]
 
